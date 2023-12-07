@@ -33,7 +33,7 @@ class TestBase(unittest.TestCase):
 
     def setUp(self):
         # Configurando Navegador
-        session.get_browser().get(load_env.get_url())
+        session.get_instance().load_website(load_env.get_url())
 
         # Login
         # self.login_section.ingresar_login(self.USERNAME, self.PASSWORD)

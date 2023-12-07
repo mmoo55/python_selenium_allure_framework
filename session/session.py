@@ -20,8 +20,8 @@ class Session:
     def get_browser(self):
         return self._browser
 
-    def load_website(self):
-        self._browser.get()
+    def load_website(self, url):
+        self.get_browser().get(url)
 
     def close_session(self):
         self._browser.quit()
